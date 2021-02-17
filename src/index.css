@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@200;300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Truculenta', sans-serif;
+}
+h1 {
+  font-weight: 200 !important;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
