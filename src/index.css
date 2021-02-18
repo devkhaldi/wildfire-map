@@ -15,6 +15,8 @@ h1 {
 .map {
   height: 100vh;
   width: 100vw;
+  outline: none;
+  box-shadow: 0;
 }
 
 .location-icon {
