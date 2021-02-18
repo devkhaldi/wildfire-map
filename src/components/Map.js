@@ -1,17 +1,24 @@
 import GoogleMapReact from 'google-map-react'
 import LocationMarker from './LocationMarker'
 
-const Map = ({ center, zoom }) => {
+const Map = ({ events, center, zoom }) => {
+  console.log(events)
   return (
     <div className='map'>
       <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyB1PLChKcIvFh5WUqY4gI-NWWqQLZxLhrg' }}
         defaultCenter={center}
         defaultZoom={zoom}>
-        <LocationMarker lat={center.lat} lng={center.lng} />
-        <LocationMarker lat={1} lng={10} />
-        <LocationMarker lat={1} lng={20} />
-        <LocationMarker lat={1} lng={30} />
+        {events.map(
+          event =>
+            event.categories[0].title == 'Wildfires' && (
+              <LocationMarker
+                key={event.id}
+                lat={event.geometries[0].coordinates[1]}
+                lng={event.geometries[0].coordinates[0]}
+              />
+            )
+        )}
       </GoogleMapReact>
     </div>
   )

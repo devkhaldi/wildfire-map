@@ -15,7 +15,7 @@ function App() {
       .finally(() => setIsLoading(false))
   }, [])
 
-  return <div>{isLoading ? <h1>Loading data ...</h1> : <Map />}</div>
+  return <div>{isLoading ? <h1>Loading data ...</h1> : <Map events={events} />}</div>
 }
 
 export default App
