@@ -3,6 +3,7 @@ import Map from './components/Map'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import Header from './components/Header'
+import Loader from './components/Loader'
 
 function App() {
   const [events, setEvents] = useState([])
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       <Header />
-      {isLoading ? <h1>Loading data ...</h1> : <Map events={events} />}
+      {isLoading ? <Loader /> : <Map events={events} />}
     </>
   )
 }

@@ -58,3 +58,13 @@ header h1 {
 .location-info li {
   padding: 0.2rem 0;
 }
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader img {
+  height: 20rem;
+}
