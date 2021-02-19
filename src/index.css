@@ -7,9 +7,22 @@
 }
 body {
   font-family: 'Truculenta', sans-serif;
+  overflow: hidden;
 }
-h1 {
-  font-weight: 200 !important;
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  background: firebrick;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+header h1 {
+  font-size: 1.8rem;
 }
 
 .map {

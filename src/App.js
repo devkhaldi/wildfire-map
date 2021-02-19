@@ -1,6 +1,8 @@
+import react from 'react'
 import Map from './components/Map'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import Header from './components/Header'
 
 function App() {
   const [events, setEvents] = useState([])
@@ -15,7 +17,12 @@ function App() {
       .finally(() => setIsLoading(false))
   }, [])
 
-  return <div>{isLoading ? <h1>Loading data ...</h1> : <Map events={events} />}</div>
+  return (
+    <>
+      <Header />
+      {isLoading ? <h1>Loading data ...</h1> : <Map events={events} />}
+    </>
+  )
 }
 
 export default App
