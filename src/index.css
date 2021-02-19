@@ -24,3 +24,15 @@ h1 {
   color: red;
   font-size: 2rem;
 }
+
+.location-info {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  width: 20rem;
+}
+.location-info h2 {
+  margin-bottom: 0.5rem;
+}
