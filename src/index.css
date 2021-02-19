@@ -29,10 +29,17 @@ h1 {
   position: fixed;
   top: 3rem;
   right: 3rem;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   padding: 1rem 2rem;
   width: 20rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .location-info h2 {
   margin-bottom: 0.5rem;
+}
+.location-info ul {
+  list-style: none;
+}
+.location-info li {
+  padding: 0.2rem 0;
 }
