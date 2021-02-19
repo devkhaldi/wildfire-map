@@ -26,7 +26,9 @@ header h1 {
 }
 
 .map {
-  height: 100vh;
+  position: absolute;
+  top: 2.5rem;
+  height: calc(100vh - 2.5rem);
   width: 100vw;
   outline: none !important;
   box-shadow: 0 !important;
@@ -40,7 +42,7 @@ header h1 {
 
 .location-info {
   position: fixed;
-  top: 3rem;
+  top: 5rem;
   right: 3rem;
   background: rgba(255, 255, 255, 0.9);
   padding: 1rem 2rem;
