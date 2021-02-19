@@ -1,7 +1,14 @@
-import React from 'react';
+import { Icon } from '@iconify/react'
+import locationIcon from '@iconify/icons-mdi/fire-alert'
 
 const Header = () => {
-  return <div></div>;
-};
+  return (
+    <header>
+      <h1>
+        <Icon icon={locationIcon} /> Wildfires Map
+      </h1>
+    </header>
+  )
+}
 
-export default Header;
+export default Header
