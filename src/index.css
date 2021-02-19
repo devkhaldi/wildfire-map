@@ -64,7 +64,8 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 7rem;
 }
 .loader img {
-  height: 20rem;
+  height: 25rem;
 }
